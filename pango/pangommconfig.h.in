@@ -7,13 +7,13 @@
 /* Define to omit deprecated API from the library. */
 #undef PANGOMM_DISABLE_DEPRECATED
 
-/* Major version number of pangomm. */
-#undef PANGOMM_MAJOR_VERSION
+/* Major version number of pangomm. */ /* Defined by JE - 11-08-2013 (was previously #undef'd) */
+#define PANGOMM_MAJOR_VERSION @PANGOMM_MAJOR_VERSION@
 
-/* Micro version number of pangomm. */
-#undef PANGOMM_MICRO_VERSION
+/* Micro version number of pangomm. */ /* Defined by JE - 11-08-2013 (was previously #undef'd) */
+#define PANGOMM_MICRO_VERSION @PANGOMM_MICRO_VERSION@
 
-/* Minor version number of pangomm. */
-#undef PANGOMM_MINOR_VERSION
+/* Minor version number of pangomm. */ /* Defined by JE - 11-08-2013 (was previously #undef'd) */
+#define PANGOMM_MINOR_VERSION @PANGOMM_MINOR_VERSION@
 
 #endif /* !PANGOMM_PANGOMMCONFIG_H_INCLUDED */

@@ -74,7 +74,6 @@ local.properties
 [Dd]ebug/
 [Rr]elease/
 x64/
-build/
 [Bb]in/
 [Oo]bj/
 
@@ -221,7 +220,6 @@ $RECYCLE.BIN/
 *.egg
 *.egg-info
 dist/
-build/
 eggs/
 parts/
 var/
@@ -294,3 +292,5 @@ pip-log.txt
 /pango/pangomm/glyph.cc
 /pango/pangomm/glyph.h
 /pango/pangomm/glyphstring.cc
+
+/build/msvc/pangomm.vsprops
