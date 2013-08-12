@@ -241,3 +241,37 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+/pango/pangomm/attributes.cc
+/pango/pangomm/attributes.h
+/pango/pangomm/attriter.cc
+/pango/pangomm/attriter.h
+/pango/pangomm/attrlist.cc
+/pango/pangomm/attrlist.h
+/pango/pangomm/cairofontmap.cc
+/pango/pangomm/cairofontmap.h
+/pango/pangomm/color.cc
+/pango/pangomm/color.h
+/pango/pangomm/context.cc
+/pango/pangomm/context.h
+/pango/pangomm/coverage.cc
+/pango/pangomm/coverage.h
+/pango/pangomm/layoutrun.h
+/pango/pangomm/item.cc
+/pango/pangomm/item.h
+/pango/pangomm/language.cc
+/pango/pangomm/language.h
+/pango/pangomm/layout.cc
+/pango/pangomm/layout.h
+/pango/pangomm/layoutiter.cc
+/pango/pangomm/layoutiter.h
+/pango/pangomm/layoutline.cc
+/pango/pangomm/layoutline.h
+/pango/pangomm/layoutrun.cc
+/pango/pangomm/renderer.cc
+/pango/pangomm/renderer.h
+/pango/pangomm/tabarray.cc
+/pango/pangomm/tabarray.h
+/pango/pangomm/wrap_init.cc
+/pango/pangomm/rectangle.cc
+/pango/pangomm/rectangle.h
