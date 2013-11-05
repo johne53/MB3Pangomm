@@ -60,4 +60,5 @@ process_file ("pango/pangommconfig.h");
 my $command=join(' ',@ARGV);
 if ($command eq -buildall) {
 	process_file ("build/msvc/pangomm.vsprops");
+	process_file ("pango/pangomm.rc");
 }
