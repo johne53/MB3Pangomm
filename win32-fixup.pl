@@ -10,7 +10,6 @@ $micro = 0;
 $binary_age = 3400;
 $interface_age = 0;
 $current_minus_age = 0;
-$pangomm_module_name = "libpangomm-2.34";
 $exec_prefix = "lib";
 
 sub process_file
@@ -35,7 +34,6 @@ sub process_file
 	    s/\@PERL@/$perl_path/g;
 	    s/\@prefix@/$exec_prefix/g;
 	    s/\@exec_prefix@/$exec_prefix/g;
-	    s/\@datarootdir@/$data_root_dir/g;
 	    s/\@M4@/$m4_path/g;
 	    s/\@libdir@/$generic_library_folder/g;
 	    s/\@GlibBuildRootFolder@/$glib_build_root_folder/g;
@@ -51,11 +49,22 @@ sub process_file
 	    s/\@Debug32TargetFolder@/$debug32_target_folder/g;
 	    s/\@Release32TargetFolder@/$release32_target_folder/g;
 	    s/\@TargetSxSFolder@/$target_sxs_folder/g;
+	    s/\@includedir@/$generic_include_folder/g;
+	    s/\@PANGOMM_API_VERSION\@/$api_version/g;
 	    print OUTPUT;
 	}
 }
 
+if (-1 != index($command, "-X64")) {
+	$pangomm_module_name = "libpangomm64-2.0";
+	$api_version = "64-2.0-0";
+} else {
+	$pangomm_module_name = "libpangomm32-2.0";
+	$api_version = "32-2.0-0";
+}
+
 process_file ("pango/pangommconfig.h");
+process_file ("pango/pangomm.pc");
 
 my $command=join(' ',@ARGV);
 if ($command eq -buildall) {
