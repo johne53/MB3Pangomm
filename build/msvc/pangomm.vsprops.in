@@ -37,6 +37,10 @@
 		Value="@AtkmmBuildRootFolder@"
 	/>
 	<UserMacro
+		Name="PangommBuildRootFolder"
+		Value="@PangommBuildRootFolder@"
+	/>
+	<UserMacro
 		Name="GenericIncludeFolder"
 		Value="@GenericIncludeFolder@"
 	/>

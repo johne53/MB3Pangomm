@@ -40,6 +40,7 @@ sub process_file
 	    s/\@GlibmmBuildRootFolder@/$glibmm_build_root_folder/g;
 	    s/\@GtkmmBuildRootFolder@/$gtkmm_build_root_folder/g;
 	    s/\@AtkmmBuildRootFolder@/$atkmm_build_root_folder/g;
+	    s/\@PangommBuildRootFolder@/$pangomm_build_root_folder/g;
 	    s/\@GenericIncludeFolder@/$generic_include_folder/g;
 	    s/\@GenericLibraryFolder@/$generic_library_folder/g;
 	    s/\@GenericWin32LibraryFolder@/$generic_win32_library_folder/g;
