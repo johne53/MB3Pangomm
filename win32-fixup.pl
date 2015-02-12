@@ -3,12 +3,12 @@
 
 require "../local-paths.lib";
 
-$pangomm_version = "2.34.0";
+$pangomm_version = "2.35.1";
 $major = 2;
-$minor = 34;
-$micro = 0;
-$binary_age = 3400;
-$interface_age = 0;
+$minor = 35;
+$micro = 1;
+$binary_age = 3501;
+$interface_age = 1;
 $current_minus_age = 0;
 $exec_prefix = "lib";
 
