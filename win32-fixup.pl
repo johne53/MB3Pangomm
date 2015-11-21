@@ -64,11 +64,11 @@ if (-1 != index($command, "-X64")) {
 	$api_version = "32-2.0-0";
 }
 
-process_file ("pango/pangommconfig.h");
 process_file ("pango/pangomm.pc");
 
 my $command=join(' ',@ARGV);
 if ($command eq -buildall) {
+	process_file ("pango/pangommconfig.h");
 	process_file ("build/msvc/pangomm.vsprops");
 	process_file ("pango/pangomm.rc");
 }
